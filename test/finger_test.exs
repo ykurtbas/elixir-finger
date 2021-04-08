@@ -8,7 +8,8 @@ defmodule FingerTest do
   end
 
   test "constructs answer 123 for given set of images" do
-    images = ["./assets/1_0.jpg", "./assets/2_1.jpg", "./assets/3_4.jpg"]
+    path = Path.join([File.cwd!(), "assets"]) <> "/"
+    images = [path <> "1_0.jpg", path <> "2_1.jpg", path <> "3_4.jpg"]
     assert Finger.construct_answer(images) == "123"
   end
 end

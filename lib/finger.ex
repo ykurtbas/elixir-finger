@@ -3,7 +3,9 @@ defmodule Finger do
   Documentation for `Finger`.
   """
 
-  @assets_path "./assets/"
+  # This just feels wrong but Jose said so in the forums. Will search for more answers on the upcoming days
+  # TODO: Look for better alternatives
+  @assets_path Path.join([File.cwd!(), "assets"]) <> "/"
 
   @doc """
   Generates a stitched image from the N number of random images.
