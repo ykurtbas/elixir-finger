@@ -7,7 +7,12 @@ Finger achieves this by showing pictures of N hands holding up random fingers an
 ![alt text](readme/finger_verification_1.jpg "Example 1")
 ![alt text](readme/finger_verification_2.jpg "Example 2")
 
-More detailed blog [post](https://elxsy.com/blog/giving-the-finger-to-those-pesky-bots)
+### Context and Demo
+
+* More detailed blog [post](https://elxsy.com/blog/giving-the-finger-to-those-pesky-bots)
+* You can see it in action [on the registration page for elxsy](https://elxsy.com/users/register) 
+
+** Please do not sign up if you do not intend to pass the email verification :)
 
 # Dependencies
 
@@ -89,7 +94,7 @@ More the merrier!
 - On a mixed background like nature or some furniture with patterns. Please *avoid* clear, flat walls and plain backgrounds.
 - Resize to 200x200
 - name the picture as `{finger_count}_{YYMMDD}_{github_username}.jpg` ie, if I am showing 2 fingers up, it would be `2_210408_ykurtbas.jpg`
-- commit into 'assets' folder
+- commit into `assets` folder
 - Raise a pull request.
 
 # Bugs or Issues
