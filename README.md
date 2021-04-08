@@ -57,7 +57,7 @@ defmodule Elxsy.TestController do
   def verify(conn, params) do
     answer = get_session(conn, :fingers)
     delete_session(conn, :fingers)
-    if params["answer"] === answer do
+    if params["fingers"] === answer do
       ...
     end
   end
