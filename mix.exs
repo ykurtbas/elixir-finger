@@ -7,6 +7,7 @@ defmodule Finger.MixProject do
       version: "0.1.0",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
+      package: package(),
       deps: deps(),
 
       # Docs
@@ -29,6 +30,19 @@ defmodule Finger.MixProject do
   defp deps do
     [
       {:ex_doc, "~> 0.24", only: :dev, runtime: false}
+    ]
+  end
+
+  defp package do
+    [
+      description: "Finger is a verification library to prove hommaannnnnness of a user",
+      files: ["assets", "lib", "mix.exs", "README.md"],
+      maintainers: ["Yuksel"],
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" => "https://github.com/ykurtbas/elixir-finger",
+        "Elxsy" => "https://elxsy.com"
+      }
     ]
   end
 end

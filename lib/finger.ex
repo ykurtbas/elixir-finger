@@ -16,7 +16,7 @@ defmodule Finger do
   ## Examples
 
       iex> Finger.generate(4)
-      {123, << 12, 34 >>
+      {"123", << 12, 34 >>}
 
   """
   def generate(number_of_images \\ 4) do
