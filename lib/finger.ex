@@ -17,7 +17,7 @@ defmodule Finger do
       {123, << 12, 34 >>
 
   """
-  def generate(number_of_images = 4) do
+  def generate(number_of_images \\ 4) do
     images = fetch_images(number_of_images)
     {construct_answer(images), stitch_images(images)}
   end
@@ -40,9 +40,7 @@ defmodule Finger do
     |> Enum.join()
   end
 
-  @doc """
-  Stitches given list of images and returns a binary image data of the result <<1, 2, 3 >>
-  """
+  # Stitches given list of images and returns a binary image data of the result <<1, 2, 3 >>
   defp stitch_images(images) do
     {binary, 0} =
       System.cmd(
