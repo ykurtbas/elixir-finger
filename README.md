@@ -1,3 +1,5 @@
+[![Elixir CI](https://github.com/ykurtbas/elixir-finger/actions/workflows/elixir.yml/badge.svg)](https://github.com/ykurtbas/elixir-finger/actions/workflows/elixir.yml)
+
 # Finger
 
 Finger is a verification library to prove hommaannnnnness of a `user`.
