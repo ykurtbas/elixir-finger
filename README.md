@@ -66,12 +66,13 @@ defmodule Elxsy.TestController do
       ...
     end
   end
+end
 ```
 3. Add to your routes
 ```elixir
 get "/test/finger.jpg", TestController, :finger
 ```
-4. Add to your template for `test` method
+4. Add to your template for `test` action
 ```elixir
 ...
 <img src="<%= Routes.test_path(@conn, :finger) %>" />
