@@ -25,3 +25,5 @@ finger-*.tar
 
 # Temporary files for e.g. tests
 /tmp
+# mac shit
+.DS_Store

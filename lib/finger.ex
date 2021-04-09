@@ -13,13 +13,18 @@ defmodule Finger do
   answer: is the "string" answer to the challenge
   binary_image: is the binary image data to be displayed to the user
 
+  Default number of images is: 4
+  Minimum number of images is: 2 (inclusive)
+  Maximum number of images is: 9 (inclusive)
+
   ## Examples
 
       iex> Finger.generate(4)
       {"123", << 12, 34 >>}
 
   """
-  def generate(number_of_images \\ 4) do
+  def generate(number_of_images \\ 4)
+      when is_integer(number_of_images) and number_of_images > 1 and number_of_images < 10 do
     images = fetch_images(number_of_images)
     {construct_answer(images), stitch_images(images)}
   end
