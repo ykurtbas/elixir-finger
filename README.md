@@ -81,7 +81,7 @@ get "/test/finger.jpg", TestController, :finger
 <input type="number" name="fingers" placeholder="Please tell me how many fingers are shown in each hand" required="true" />
 ...
 ```
-5. Verify for the answer in form submission with the `verify` like an example.
+5. Verify for the answer in form submission with the `verify` like the example.
 
 # Contribution to the library
 
